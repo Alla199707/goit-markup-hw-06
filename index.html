@@ -407,14 +407,18 @@
           </ul>
         </div>
         <form class="footer-signup">
-          <label for="footer-signup-title">Підпишіться на розсилку</label>
+          <label class="footer-signup-title" for="signup-mail">Підпишіться на розсилку</label>
           <div class="signup-wrap">
-            <label>
-              <input type="email" name="email" />
-            </label>
+            <input
+              id="signup-mail"
+              type="email"
+              name="signup-mail"
+              class="signup-input"
+              placeholder="E-mail"
+            />
             <button type="submit" class="signup-btn">
               <span>Підписатися</span>
-              <svg class="modal-close-icon" data-modal-close width="24" height="24">
+              <svg class="signup-icon" data-modal-close width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
               </svg>
             </button>
@@ -442,6 +446,9 @@
                 placeholder=" "
                 required=""
               />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#icon-person"></use>
+              </svg>
             </div>
           </div>
           <div class="modal-field">
@@ -455,6 +462,9 @@
                 placeholder=" "
                 required=""
               />
+              <svg class="input-icon" width="13" height="13">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
             </div>
           </div>
           <div class="modal-field">
@@ -468,6 +478,9 @@
                 placeholder=" "
                 required=""
               />
+              <svg class="input-icon" width="15" height="12">
+                <use href="./images/symbol-defs.svg#icon-email"></use>
+              </svg>
             </div>
           </div>
           <label class="modal-label">
@@ -475,7 +488,7 @@
             <textarea
               name="user-comment"
               class="modal-input modal-comment"
-              placeholder=" "
+              placeholder="Коментар"
             ></textarea>
           </label>
           <div class="modal-field">
