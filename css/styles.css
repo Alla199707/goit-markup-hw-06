@@ -5,6 +5,7 @@
   --main-text-color: #212121;
   --logo-text-color: #000000;
   --accent-color: #2196f3;
+  --accent-bg-color: #188ce8;
   --secondory-white-color: #ffffff;
   --owner-text-color: #757575;
   --contener-color: #eeeeee;
@@ -645,32 +646,61 @@ img {
 
   transition: color 250ms var(--timing-function);
 }
-
+/* --------------------Секция формы футера---------------- */
+.footer-form {
+  margin-left: auto;
+}
 .footer-signup {
-  margin-left: 50px;
+  display: flex;
 }
 
-.signup-wrap {
-  display: flex;
-  gap: 12px;
+.footer-form-label {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--secondory-white-color);
 }
 .signup-input {
-  width: 358px;
-  background-color: inherit;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
+  margin-right: 12px;
   padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  border-radius: 4px;
+  color: var(--secondory-white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .signup-btn {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: center;
+  margin-top: auto;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--secondory-white-color);
+  background-color: var(--accent-color);
+  transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
+}
+.signup-btn:hover,
+.signup-btn:focus {
+  background-color: var(--accent-bg-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .signup-icon {
-  fill: var(--secondory-white-color);
+  margin: 10px;
+/* fill: var(--secondory-white-color); */
+  fill: currentColor;
 }
 
 /* ----------------------Модальное окно---------------------- */
@@ -722,7 +752,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
@@ -772,7 +802,7 @@ img {
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms var(--timing-function);
 }
 /* .modal-input:hover,
 .modal-input:focus {
