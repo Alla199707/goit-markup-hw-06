@@ -690,6 +690,7 @@ img {
   color: var(--secondory-white-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  border-radius: 4px;
   transition: background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
 .signup-btn:hover,
@@ -855,10 +856,10 @@ img {
   margin: -1px;
 }
 
-.checkbox-input:hover + .checkbox-check,
+/* .checkbox-input:hover + .checkbox-check,
 .checkbox-input:focus + .checkbox-check {
   border-color: var(--accent-color);
-}
+} */
 
 .checkbox-input:checked + .checkbox-check {
   border-color: var(--accent-color);
