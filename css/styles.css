@@ -727,8 +727,8 @@ img {
   transform: translate(-50%, -50%) rotateX(0deg);
   transition: transform 250ms var(--timing-function);
 
-  min-width: 528px;
-  min-height: 582px;
+  width: 528px;
+  height: 582px;
   background-color: var(--secondory-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -814,9 +814,8 @@ img {
 .input-icon {
   position: absolute;
   left: 12px;
-  top: 35px;
+  top: 50%;
   fill: var(--logo-text-color);
-  transform: translateY(-50%);
   transition: fill 250ms var(--timing-function);
 }
 
@@ -832,6 +831,7 @@ img {
   color: var(--owner-text-color);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  resize: none;
   outline: var(--accent-color);
   transition: border-color 250ms var(--timing-function);
 }
@@ -909,6 +909,8 @@ img {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  cursor: pointer;
   color: var(--secondory-white-color);
   background-color: var(--accent-color);
   border: 1px solid var(--accent-bg-color);
